@@ -1,0 +1,88 @@
+/* Import de la font  ************************************************/
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+
+/* Style *************************************************************/
+
+body {
+  background: #eee;
+  margin: 0;
+  padding: 5rem;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #555;
+}
+header {
+  background: #ddd;
+}
+header ul {
+  list-style: none;
+  margin: 0;
+  background: #fff;
+}
+header ul li {
+  padding: 0.5rem 0;
+}
+
+a {
+  color: #d83359;
+}
+i {
+  padding: 1rem;
+}
+h1 {
+  background: #fff;
+  border-bottom: 3px solid #d83359;
+  text-align: center;
+  font-size: 4rem;
+  margin: 0;
+  padding: 2rem;
+}
+h2 {
+  background: #d83359;
+  color: #ffffff;
+  padding: 3px 5px;
+  margin: 0;
+}
+h3 {
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #555;
+  padding: 3px 5px;
+  margin: 0 0 1rem 0;
+}
+nav {
+  padding: 1rem;
+  margin: 1rem 0 0 0;
+  font-weight: bold;
+}
+nav a {
+  margin-right: 2rem;
+  padding: 1rem 2rem;
+  background: #fff;
+}
+nav a:hover {
+  margin-right: 2rem;
+  padding: 1rem 2rem;
+  color: #fff;
+  background: #d83359;
+}
+article ul {
+  padding: 0 1rem;
+  margin-left: 1rem;
+}
+
+table {
+  background: #ffffff;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+th {
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  background: #555;
+}
+td {
+  padding: 0.5rem 1rem;
+}
