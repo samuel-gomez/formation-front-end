@@ -1,19 +1,13 @@
-# Enoncé : Page CV : les tableaux
+# Enoncé : Page CV : aller plus dans le style
 
 - Récupérer la maquette
-- Reprendre l'HTML de l'exo 4
+- Reprendre la dernière version du CV
 - Habiller la page de façon à respecter la maquette, pour cela créer un fichier 'main.css'
-- Vous pouvez utiliser ces quelques les propriétés CSS (que vous connaissez probablement)
+- Vous pouvez utiliser toutes les propriétés vues précédemment
+- Aller plus loin dans l’habillage des listes, des tableaux et des liens
+- Habiller les images (hover, etc,…)
+- Travailler avec les pseudo element (et la propriété content)
+- Liste CSS counter à appliquer sur les parties principales (Compétences, expériences, …)
+- Ajouter les propriétés background adéquates
 
-  - background-color : pour modifier la couleur de fond
-  - color : pour modifier la couleur du texte
-  - font-family : pour modifier la police
-  - font-weight : pour modifier la graisse de la police
-  - text-transform : changer la casse du texte
-  - margin : définie les marges externes
-  - padding : définie les marges internes
-  - border-collapse : fusion des bordures de tableau
-  - list-style : style des puces des listes
-  - border : définie les bordures
-
-- Valider sa page sur le W3C : [https://validator.w3.org/#validate_by_input](https://validator.w3.org/#validate_by_input)
+## (Ne pas hésitez à retravailler la structure HTML)
