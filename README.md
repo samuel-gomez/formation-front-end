@@ -3,7 +3,7 @@
 - Récupérer la maquette
 - Reprendre l'HTML de l'exo 4
 - Habiller la page de façon à respecter la maquette, pour cela créer un fichier 'main.css'
-- Voici quelques les propriétés CSS que vous connaissez probablement
+- Vous pouvez utiliser ces quelques les propriétés CSS (que vous connaissez probablement)
 
   - background-color : pour modifier la couleur de fond
   - color : pour modifier la couleur du texte
