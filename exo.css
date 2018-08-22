@@ -1,0 +1,85 @@
+/** 
+** Commencer l'exercice ici 
+**/
+/* Partie 1 */
+.part-1 p{
+    color: blue;
+}
+
+.part-1 .important{
+    color: red;
+}
+
+.part-1 #im-alone{
+    text-decoration: underline;
+}
+
+.part-1 *{
+    text-transform: uppercase;
+}
+
+/* Partie 2 */
+.part-2 div[data-color]{
+    border-style: dashed;
+}
+
+.part-2 div[data-color*="bleu"]{
+    background-color: blue;
+}
+
+.part-2 div[data-color~="rouge"]{
+    background-color: red;
+}
+
+/* Partie 3 */
+.part-3 .exo-article p{
+    padding-left: 20px;
+}
+
+.part-3 h2+p{
+    background-color: yellow;
+}
+
+
+.part-3 h2~p{
+    border: solid 1px black;
+}
+
+.part-3 li>p{
+    color: green;
+}
+
+/* Partie 4 */
+.part-4 ol li{
+    font-weight: bold;
+}
+.part-4 ul li{
+    font-weight: normal;
+}
+.part-4 ol li:first-child ul li:first-child{
+    color: red;
+}
+
+.part-4 ol li ul li:only-of-type{
+    color: green;
+}
+
+.part-4 ol li:nth-child(3) ul li:first-child::after{
+    content: " cerise";
+}
+
+.part-4 #child-list-1 li:nth-child(6){
+    background-color: green;
+}
+
+.part-4 #child-list-2 li:nth-child(4n+1){
+    background-color: yellow;
+}
+
+.part-4 #child-list-3 li:nth-child(even){
+    background-color: red;
+}
+
+.part-4 #child-list-4 li:nth-child(n+6){
+    background-color: blue;
+}
