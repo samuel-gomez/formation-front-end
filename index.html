@@ -1,180 +1,232 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page CV</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Les sélecteurs CSS</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="exo.css">
 </head>
-
 <body>
-    <header>
-        <h1 id="top">John Doe</h1>
-        <address>
-            <ul>
-                <li>4 allée du Château blanc</li>
-                <li>59290 Wasquehal</li>
-                <li>France</li>
-            </ul>
-        </address>
-        <ul>
-            <li>Permis B + Véhicule</li>
-            <li>
-                <a href="tel:0607080910">06 07 08 09 10</a>
-            </li>
-            <li>
-                <a title="contacter John Doe" href="mailto:johndoe@axa.fr?subject=Formation%20HTML%2FCSS&body=Bonne%20Formation%20%3A)">johndoe@axa.fr</a>
-            </li>
+    <div class="main-wrapper">
+        <h1>Les sélecteurs CSS</h1>
+        <h2>
+            <span class="underlined">Partie 1</span> : 
+            Les sélecteurs simples
+        </h2>
+        <h3>Les choses à faire:</h3>
+        <ul class="exo-list">
+            <li>Cibler les balises "p" et mettre le texte en couleur bleu </li>
+            <li>Cibler le paragraphe avec l'attribut class ayant pour valeur "important" et mettre le texte en rouge</li>
+            <li>Cibler le pargraphe avec l'attribut id ayant pour valeur "im-alone" et mettre le texte en souligné</li>
+            <li>Sélectionner tous les noeuds du document et mettre le texte en majuscule</li>
         </ul>
-        <img alt="John Doe" title="Photo CV de John Doe" src="https://via.placeholder.com/150x150" srcset="https://via.placeholder.com/150x150 320w, https://via.placeholder.com/200x200 640w , https://via.placeholder.com/250x250 1024w, https://via.placeholder.com/300x300 1280w"
-        />
-        <nav>
-            <a href="#exp">Expérience</a>
-            <a href="#comp">Compétences</a>
-            <a href="#oth">Others</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2 id="exp">Expérience</h2>
-            <article>
-                <h3>Tech leader</h3>
-                <i>
-                    <a href="http://www.google.fr" target="blank" title="Aller sur Google.fr">Google</a> en CDI à San Franscisco (depuis 2017)</i>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur (lalala) </li>
-                    <li>Lorem ipsum dolor sit amet
-                        <strong>consectetur</strong>
-                    </li>
-                    <li>Lorem ipsum dolor sit amet consectetur (lalala) </li>
-                </ul>
-            </article>
-            <article>
-                <h3>Senior Developer</h3>
-                <i>
-                    <a href="http://www.amazon.fr" target="blank" title="Aller sur amazon.fr">Amazon</a> en CDI à San Franscisco (de 2010 à 2015)</i>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur (lalala) </li>
-                    <li>Lorem ipsum dolor sit amet
-                        <strong>consectetur</strong>
-                    </li>
-                    <li>Lorem ipsum dolor sit amet consectetur (lalala) </li>
-                </ul>
-            </article>
-            <article>
-                <h3>Developer</h3>
-                <i>
-                    <a href="http://www.facebook.fr" target="blank" title="Aller sur facebook.fr">Facebook</a> en CDI à San Franscisco (de 2013 à 2015)</i>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur (lalala) </li>
-                    <li>Lorem ipsum dolor sit amet
-                        <strong>consectetur</strong>
-                    </li>
-                    <li>Lorem ipsum dolor sit amet consectetur (lalala) </li>
-                </ul>
-            </article>
-            <article>
-                <h3>Developer</h3>
-                <i>
-                    <a href="http://www.twitter.com" target="blank" title="Aller sur twitter.com">Twitter</a> en CDI à San Franscisco (de 2010 à 2013)</i>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur (lalala) </li>
-                    <li>Lorem ipsum dolor sit amet
-                        <strong>consectetur</strong>
-                    </li>
-                    <li>Lorem ipsum dolor sit amet consectetur (lalala) </li>
-                </ul>
-            </article>
-        </section>
-        <section>
-            <h2 id="comp">Compétences</h2>
-            <article>
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Technos</th>
-                            <th>Notes (1 à 5)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td rowspan="4">Front-end</td>
-                            <td>React</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>Angular</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>ES6</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>VueJS</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">Moyenne FE</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="5">Back-end</td>
-                            <td>Nodejs</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>Symfony</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>DotNet</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>MongoDb</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>MySQL</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">Moyenne BE</td>
-                            <td>4</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="2">Moyenne générale</td>
-                            <td>4</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </article>
-        </section>
-        <section>
-            <h2 id="oth">Loisirs</h2>
-            <article>
-                <figure>
-                    <img alt="Basket" title="Loisir : Basket" src="https://via.placeholder.com/150x150" srcset="https://via.placeholder.com/150x150 320w, https://via.placeholder.com/200x200 640w , https://via.placeholder.com/250x250 1024w, https://via.placeholder.com/300x300 1280w"
-                    />
-                    <figcaption>Basket</figcaption>
-                </figure>
-                <figure>
-                    <img alt="Photo" title="Loisir : Photo" src="https://via.placeholder.com/150x150" srcset="https://via.placeholder.com/150x150 320w, https://via.placeholder.com/200x200 640w , https://via.placeholder.com/250x250 1024w, https://via.placeholder.com/300x300 1280w"
-                    />
-                    <figcaption>Photo</figcaption>
-                </figure>
-            </article>
-        </section>
-        <a href="#top">back to top</a>
-    </main>
+        <div class="part-1">
+            <div class="exo-content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facilis odit neque. Cupiditate enim voluptas, 
+                    nobis officiis corporis sequi culpa eligendi ratione adipisci eius fugiat perferendis cumque quaerat provident. Error.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facilis odit neque. Cupiditate enim voluptas, 
+                    nobis officiis corporis sequi culpa eligendi ratione adipisci eius fugiat perferendis cumque quaerat provident. Error.
+                </p>
+                <p class="important">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facilis odit neque. Cupiditate enim voluptas, 
+                    nobis officiis corporis sequi culpa eligendi ratione adipisci eius fugiat perferendis cumque quaerat provident. Error.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facilis odit neque. Cupiditate enim voluptas, 
+                    nobis officiis corporis sequi culpa eligendi ratione adipisci eius fugiat perferendis cumque quaerat provident. Error.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nobis facilis odit neque. Cupiditate enim voluptas, 
+                    nobis officiis corporis sequi culpa eligendi ratione adipisci eius fugiat perferendis cumque quaerat provident. Error.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facilis odit neque. Cupiditate enim voluptas, 
+                    nobis officiis corporis sequi culpa eligendi ratione adipisci eius fugiat perferendis cumque quaerat provident. Error.
+                </p>
+                <p id="im-alone">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facilis odit neque. Cupiditate enim voluptas, 
+                    nobis officiis corporis sequi culpa eligendi ratione adipisci eius fugiat perferendis cumque quaerat provident. Error.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facilis odit neque. Cupiditate enim voluptas, 
+                    nobis officiis corporis sequi culpa eligendi ratione adipisci eius fugiat perferendis cumque quaerat provident. Error.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facilis odit neque. Cupiditate enim voluptas, 
+                    nobis officiis corporis sequi culpa eligendi ratione adipisci eius fugiat perferendis cumque quaerat provident. Error.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facilis odit neque. Cupiditate enim voluptas, 
+                    nobis officiis corporis sequi culpa eligendi ratione adipisci eius fugiat perferendis cumque quaerat provident. Error.
+                </p>
+                <span>Un texte moins important</span>
+            </div>
+        </div>
 
+        <h2><span class="underlined">Partie 2</span> : Les sélecteurs d'attribut</h2>
+        <h3>Les choses à faire:</h3>
+        <ul class="exo-list">
+            <li>Mettre les bordures en pointillé les carrés ayant comme attribut "data-color"</li>
+            <li>Mettre en bleu les carrés ayant pour attribut "data-color" et qui contient dans leur valeur le mot "bleu"</li>
+            <li>Mettre en rouge le carré ayant exactement comme valeur "rouge"</li>
+        </ul>
+        <div class="part-2">
+            <div class="exo-content">
+                <div class="exo-square" data-color="bleudauvergne"></div>
+                <div class="exo-square" data-color="rouge"></div>
+                <div class="exo-square" data-color="cerevebleu"></div>
+                <div class="exo-square"></div>
+                <div class="exo-square"></div>
+                <div class="exo-square" data-color="enrougeetnoire"></div>
+                <div class="exo-square" data-color="Rouge"></div> 
+            </div>
+        </div>
+
+        <h2><span class="underlined">Partie 3</span> : Les combinateurs</h2>
+        <h3>Les choses à faire:</h3>
+        <ul class="exo-list">
+            <li>Un retrait gauche de 20px pour tous les paragraphes descendants de la classe "article".</li>
+            <li>Un background de couleur jaune pour  les paragraphes frères directs du titre "h2" (qui se trouvent immédiatement après h2).</li>
+            <li>Une bordure noir et solide pour les paragraphes adjacents du titre "h2".</li>
+            <li>Une couleur verte pour les paragraphes fils des éléments "li".</li>
+        </ul>
+        <div class="part-3">
+            <div class="exo-content">
+                <div class="exo-article">
+                    <h2>Titre1</h2>
+                    <ul> 
+                        <li>Item1:<p>resumé item1..........</p></li>
+                        <li>Item2:<p>resumé item2.......</p></li>
+                        <li>Item3:<p>resumé item3........</p></li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            
+                    <h2>Titre2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <div class="exemple">
+                        <h2>exemple1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2><span class="underlined">Partie 4</span> : Les pseudo-classes et pseudo-éléments</h2>
+        <h3>Les choses à faire:</h3>
+        <ul class="exo-list">
+            <li>Mettre le texte en gras le nom des catégories</li>
+            <li>Mettre le texte en rouge barré le premier item de la liste "Epicerie"</li>
+            <li>Mettre le texte en vert les produits orphelin dans leur catégories</li>
+            <li>Ajouter le mot "cerise" à la suite du mot "tomate" dans la catégorie "Légumes" en CSS</li>
+        </ul>
+        <div class="part-4">
+            <div class="exo-content">
+                <h2>Liste de courses</h2>
+                <ol class="liste-course">
+                    <li>Epicerie
+                        <ul>
+                            <li>Pâtes</li>
+                            <li>Riz</li>
+                            <li>Sauce tomate</li>
+                            <li>Conserves</li>
+                        </ul>
+                    </li>
+                    <li>Fruits
+                        <ul>
+                            <li>Orange</li>
+                            <li>Pomme</li>
+                            <li>Fraise</li>
+                        </ul>
+                    </li>
+                    <li>Légumes
+                        <ul>
+                            <li>Tomates</li>
+                            <li>Pomme de terre</li>
+                            <li>Carottes</li>
+                        </ul>
+                    </li>
+                    <li>Produits de beauté
+                        <ul>
+                            <li>Dentifrice</li>
+                        </ul>
+                    </li>
+                    <li>Boissons
+                        <ul>
+                            <li>Eau</li>
+                            <li>Jus de fruit</li>
+                            <li>Limonade</li>
+                        </ul>
+                    </li>
+                    <li>Produits ménagés
+                        <ul>
+                            <li>Liquide vaissel</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <h3>Les choses à faire:</h3>
+            <ul class="exo-list">
+                <li>Dans la liste 1, sélectionner le 6ème élément de la liste et mettre le fonds en vert</li>
+                <li>Dans la liste 2, sélectionner à chaque quatrième élément en commençant par le premier et mettre le fonds en jaune</li>
+                <li>Dans la liste 3, sélectionner les éléments paires et mettre le fonds en rouge</li>
+                <li>Dans la liste 4, sélectionner les 5 derniers éléments et mettre le fonds en bleu</li>
+                
+            </ul>
+            <div class="part-4">
+                <div class="exo-content">
+                    <h2>Liste 1</h2>
+                    <ul class="child-list" id="child-list-1">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <h2>Liste 2</h2>
+                    <ul class="child-list" id="child-list-2">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <h2>Liste 3</h2>
+                    <ul class="child-list" id="child-list-3">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <h2>Liste 4</h2>
+                    <ul class="child-list" id="child-list-4">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
 </body>
-
 </html>
