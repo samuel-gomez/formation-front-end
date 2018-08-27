@@ -1,9 +1,9 @@
-# Enoncé : Page CV : aller plus dans le style
+# Enoncé : Page CV : aller plus loin dans le style
 
 - Récupérer la maquette
-- Reprendre la dernière version du CV
+- Reprendre la dernière version du CV habillé
 - Habiller la page de façon à respecter la maquette, pour cela créer un fichier 'main.css'
-- Vous pouvez utiliser toutes les propriétés vues précédemment
+- Vous pouvez utiliser toutes les propriétés vues précédemment (sélecteus, position, display, ...)
 - Aller plus loin dans l’habillage des listes, des tableaux et des liens
 - Habiller les images (hover, etc,…)
 - Travailler avec les pseudo element (et la propriété content)
