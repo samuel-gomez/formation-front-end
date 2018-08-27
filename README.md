@@ -1,5 +1,6 @@
-# Enoncé : Créer une grille avec les flexbox
+# Enoncé : Réaliser les animations ci-dessous au survol de chaque élément
 
-- Récupérer le fichier HTML
-- A l'aide des flexbox, créer votre propre grille sur 12 colonnes
-- Prévoir les gouttières ainsi que les offsets
+- Réaliser une rotation de 360° dans le sens horaire
+- Réaliser un flip X de 180°
+- Réaliser un grossissement
+- Réaliser un translate Y
