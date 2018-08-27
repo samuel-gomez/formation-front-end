@@ -12,30 +12,36 @@
 
 <body>
     <header>
-        <h1 id="top">John Doe</h1>
-        <address>
+        <div class='title'>
+            <h1 id="top">John Doe</h1>
+            <img alt="John Doe" title="Photo CV de John Doe" src="https://via.placeholder.com/150x150" srcset="https://via.placeholder.com/150x150 320w, https://via.placeholder.com/200x200 640w , https://via.placeholder.com/250x250 1024w, https://via.placeholder.com/300x300 1280w"
+            />
+        </div>
+        <div class="info">
+            <address>
+                <ul>
+                    <li>4 allée du Château blanc</li>
+                    <li>59290 Wasquehal</li>
+                    <li>France</li>
+                </ul>
+            </address>
             <ul>
-                <li>4 allée du Château blanc</li>
-                <li>59290 Wasquehal</li>
-                <li>France</li>
+                <li>Permis B + Véhicule</li>
+                <li>
+                    <a href="tel:0607080910">06 07 08 09 10</a>
+                </li>
+                <li>
+                    <a title="contacter John Doe" href="mailto:johndoe@axa.fr?subject=Formation%20HTML%2FCSS&body=Bonne%20Formation%20%3A)">johndoe@axa.fr</a>
+                </li>
             </ul>
-        </address>
-        <ul>
-            <li>Permis B + Véhicule</li>
-            <li>
-                <a href="tel:0607080910">06 07 08 09 10</a>
-            </li>
-            <li>
-                <a title="contacter John Doe" href="mailto:johndoe@axa.fr?subject=Formation%20HTML%2FCSS&body=Bonne%20Formation%20%3A)">johndoe@axa.fr</a>
-            </li>
-        </ul>
-        <img alt="John Doe" title="Photo CV de John Doe" src="https://via.placeholder.com/150x150" srcset="https://via.placeholder.com/150x150 320w, https://via.placeholder.com/200x200 640w , https://via.placeholder.com/250x250 1024w, https://via.placeholder.com/300x300 1280w"
-        />
-        <nav>
-            <a href="#exp">Expérience</a>
-            <a href="#comp">Compétences</a>
-            <a href="#oth">Others</a>
-        </nav>
+        </div>
+        <div>
+            <nav>
+                <a href="#exp">Expérience</a>
+                <a href="#comp">Compétences</a>
+                <a href="#oth">Others</a>
+            </nav>
+        </div>
     </header>
     <main>
         <section>
@@ -43,7 +49,8 @@
             <article>
                 <h3>Tech leader</h3>
                 <i>
-                    <a href="http://www.google.fr" target="blank" title="Aller sur Google.fr">Google</a> en CDI à San Franscisco (depuis 2017)</i>
+                    <a href="http://www.google.fr" target="blank" title="Aller sur Google.fr">Google</a> en CDI à San Franscisco
+                    (depuis 2017)</i>
                 <ul>
                     <li>Lorem ipsum dolor sit amet consectetur (lalala) </li>
                     <li>Lorem ipsum dolor sit amet
@@ -55,7 +62,8 @@
             <article>
                 <h3>Senior Developer</h3>
                 <i>
-                    <a href="http://www.amazon.fr" target="blank" title="Aller sur amazon.fr">Amazon</a> en CDI à San Franscisco (de 2010 à 2015)</i>
+                    <a href="http://www.amazon.fr" target="blank" title="Aller sur amazon.fr">Amazon</a> en CDI à San Franscisco
+                    (de 2010 à 2015)</i>
                 <ul>
                     <li>Lorem ipsum dolor sit amet consectetur (lalala) </li>
                     <li>Lorem ipsum dolor sit amet
@@ -67,7 +75,8 @@
             <article>
                 <h3>Developer</h3>
                 <i>
-                    <a href="http://www.facebook.fr" target="blank" title="Aller sur facebook.fr">Facebook</a> en CDI à San Franscisco (de 2013 à 2015)</i>
+                    <a href="http://www.facebook.fr" target="blank" title="Aller sur facebook.fr">Facebook</a> en CDI à San
+                    Franscisco (de 2013 à 2015)</i>
                 <ul>
                     <li>Lorem ipsum dolor sit amet consectetur (lalala) </li>
                     <li>Lorem ipsum dolor sit amet
@@ -79,7 +88,8 @@
             <article>
                 <h3>Developer</h3>
                 <i>
-                    <a href="http://www.twitter.com" target="blank" title="Aller sur twitter.com">Twitter</a> en CDI à San Franscisco (de 2010 à 2013)</i>
+                    <a href="http://www.twitter.com" target="blank" title="Aller sur twitter.com">Twitter</a> en CDI à San
+                    Franscisco (de 2010 à 2013)</i>
                 <ul>
                     <li>Lorem ipsum dolor sit amet consectetur (lalala) </li>
                     <li>Lorem ipsum dolor sit amet
@@ -161,18 +171,20 @@
             <h2 id="oth">Loisirs</h2>
             <article>
                 <figure>
-                    <img alt="Basket" title="Loisir : Basket" src="https://via.placeholder.com/150x150" srcset="https://via.placeholder.com/150x150 320w, https://via.placeholder.com/200x200 640w , https://via.placeholder.com/250x250 1024w, https://via.placeholder.com/300x300 1280w"
+                    <img alt="Basket" class="loisir" title="Loisir : Basket" src="https://via.placeholder.com/150x150" srcset="https://via.placeholder.com/150x150 320w, https://via.placeholder.com/200x200 640w , https://via.placeholder.com/250x250 1024w, https://via.placeholder.com/300x300 1280w"
                     />
-                    <figcaption>Basket</figcaption>
+                    <figcaption>
+                        Basket
+                    </figcaption>
                 </figure>
                 <figure>
-                    <img alt="Photo" title="Loisir : Photo" src="https://via.placeholder.com/150x150" srcset="https://via.placeholder.com/150x150 320w, https://via.placeholder.com/200x200 640w , https://via.placeholder.com/250x250 1024w, https://via.placeholder.com/300x300 1280w"
+                    <img alt="Photo" class="loisir" title="Loisir : Photo" src="https://via.placeholder.com/150x150" srcset="https://via.placeholder.com/150x150 320w, https://via.placeholder.com/200x200 640w , https://via.placeholder.com/250x250 1024w, https://via.placeholder.com/300x300 1280w"
                     />
-                    <figcaption>Photo</figcaption>
+                    <figcaption>Photo </figcaption>
                 </figure>
             </article>
         </section>
-        <a href="#top">back to top</a>
+        <a href="#top" class="link-top">back to top</a>
     </main>
 
 </body>

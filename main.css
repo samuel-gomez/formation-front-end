@@ -5,84 +5,184 @@
 /* Style *************************************************************/
 
 body {
-  background: #eee;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 5rem;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
   color: #555;
+  background: rgba(255, 255, 255, 0.9)
+    url("http://lvdneng.rosselcdn.net/sites/default/files/dpistyles/ena_16_9_extra_big/node_355354/39338333/public/afp/2018/4/10/12/bbe2d91284553968f19919aec600a78d6dca5c3f.jpg?itok=ffg8FJjh")
+    repeat-y 0 0;
+  background-size: contain;
 }
 header {
-  background: #ddd;
+  background: rgba(255, 255, 255, 0.9);
 }
+header .info {
+  display: table;
+  width: 100%;
+  background: white;
+}
+header .title {
+  position: relative;
+}
+header .title h1 {
+  width: 100%;
+}
+header .title img {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 4px solid #d83359;
+}
+
 header ul {
   list-style: none;
   margin: 0;
   background: #fff;
 }
+
 header ul li {
   padding: 0.5rem 0;
 }
+address {
+  display: table-cell;
+  text-align: right;
+  font-style: italic;
+}
 
 a {
+  text-decoration: none;
   color: #d83359;
 }
+
+a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+.link-top {
+  text-decoration: underline overline;
+}
+
+.link-top:after {
+  content: " ↑";
+}
+
 i {
   padding: 1rem;
+  text-indent: 32px;
 }
+
+main {
+  counter-reset: skills;
+  background: rgba(255, 255, 255, 0.9);
+}
+
 h1 {
   background: #fff;
-  border-bottom: 3px solid #d83359;
-  text-align: center;
   font-size: 4rem;
   margin: 0;
-  padding: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+  letter-spacing: 15px;
+  word-spacing: 100px;
+  color: #fff;
+  border-bottom: 3px solid #d83359;
+  background: url(http://i67.tinypic.com/wwhrb7.png) no-repeat 51% center,
+    linear-gradient(#fe8c12, #ff1c64);
+  background-size: 50px;
 }
+
 h2 {
-  background: #d83359;
-  color: #ffffff;
-  padding: 3px 5px;
   margin: 0;
+  padding: 1rem 0.5rem;
+  color: #fff;
+  background: #d83359;
+  text-shadow: 2px 2px 0 #8f0a29;
+  font-size: 2rem;
 }
+
+h2::before {
+  content: " ♦ ";
+}
+
 h3 {
-  text-transform: uppercase;
-  color: #ffffff;
-  background: #555;
-  padding: 3px 5px;
   margin: 0 0 1rem 0;
+  padding: 3px 5px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #555;
 }
+
+h3::before {
+  content: counter(skills, upper-roman) ". ";
+  counter-increment: skills;
+}
+
 nav {
-  padding: 1rem;
-  margin: 1rem 0 0 0;
   font-weight: bold;
+  margin: 1rem 0 0 0;
+  padding: 1rem;
 }
+
 nav a {
   margin-right: 2rem;
   padding: 1rem 2rem;
   background: #fff;
 }
+
 nav a:hover {
   margin-right: 2rem;
   padding: 1rem 2rem;
   color: #fff;
   background: #d83359;
 }
+
 article ul {
-  padding: 0 1rem;
   margin-left: 1rem;
+  padding: 0 1rem;
+  list-style: square inside;
 }
 
 table {
-  background: #ffffff;
-  width: 100%;
-  border-collapse: collapse;
+  margin: 50px auto;
+  width: 80%;
   margin-bottom: 2rem;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 0 10px 10px rgba(150, 150, 150, 0.3);
 }
+
 th {
   padding: 0.5rem 1rem;
-  color: #ffffff;
+  color: #fff;
   background: #555;
 }
+
 td {
   padding: 0.5rem 1rem;
+  vertical-align: top;
+}
+
+figure {
+  display: inline-block;
+}
+figure img {
+  border-radius: 3px;
+  border: 3px solid #d83359;
+  width: 150px;
+  transform: rotate(2deg);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+figure img:hover {
+  opacity: 0.75;
+}
+figure figcaption {
+  background: #d83359;
+  color: white;
+  padding: 2px;
 }
