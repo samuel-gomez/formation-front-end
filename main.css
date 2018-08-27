@@ -1,0 +1,43 @@
+body {
+  background: #d4e6f1;
+  color: #1b2631;
+}
+
+/**
+ * ----------------------------------------
+ * css divs
+ * ----------------------------------------
+ */
+.rotate-animation,
+.flip-animation,
+.scale-animation,
+.translate-animation {
+  width: 150px;
+  height: 150px;
+  background: #bb8fce;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+  float: left;
+  margin: 0.2rem;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+
+.wrapper-card {
+  width: 150px;
+  height: 156px;
+  text-align: center;
+  color: white;
+  float: left;
+  cursor: pointer;
+  padding: 0.2rem;
+}
+
+.card-animation__face--front {
+  background: #bb8fce;
+}
+
+.card-animation__face--back {
+  background: #5499c7;
+}
