@@ -1,0 +1,214 @@
+body {
+  margin: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1;
+  background: #ccc;
+  justify-content: space-between;
+  margin-bottom: 1rem; }
+
+.cell {
+  color: white;
+  text-align: center;
+  position: relative; }
+
+.box {
+  height: 50px;
+  background: #007fff; }
+
+.cell--1 {
+  flex-basis: calc(((100% - 176px) / 12 * 1)); }
+  .cell--1:after {
+    content: "cell--1";
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.cell-offset-left--1 {
+  margin-left: calc((100% / 12 * 1) + 8px); }
+
+.cell-offset-right--1 {
+  margin-right: calc((100% / 12 * 1) + 8px); }
+
+.cell--2 {
+  flex-basis: calc(((100% - 80px) / 12 * 2)); }
+  .cell--2:after {
+    content: "cell--2";
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.cell-offset-left--2 {
+  margin-left: calc((100% / 12 * 2) + 8px); }
+
+.cell-offset-right--2 {
+  margin-right: calc((100% / 12 * 2) + 8px); }
+
+.cell--3 {
+  flex-basis: calc(((100% - 48px) / 12 * 3)); }
+  .cell--3:after {
+    content: "cell--3";
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.cell-offset-left--3 {
+  margin-left: calc((100% / 12 * 3) + 8px); }
+
+.cell-offset-right--3 {
+  margin-right: calc((100% / 12 * 3) + 8px); }
+
+.cell--4 {
+  flex-basis: calc(((100% - 32px) / 12 * 4)); }
+  .cell--4:after {
+    content: "cell--4";
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.cell-offset-left--4 {
+  margin-left: calc((100% / 12 * 4) + 8px); }
+
+.cell-offset-right--4 {
+  margin-right: calc((100% / 12 * 4) + 8px); }
+
+.cell--5 {
+  flex-basis: calc(((100% - 22.4px) / 12 * 5)); }
+  .cell--5:after {
+    content: "cell--5";
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.cell-offset-left--5 {
+  margin-left: calc((100% / 12 * 5) + 8px); }
+
+.cell-offset-right--5 {
+  margin-right: calc((100% / 12 * 5) + 8px); }
+
+.cell--6 {
+  flex-basis: calc(((100% - 16px) / 12 * 6)); }
+  .cell--6:after {
+    content: "cell--6";
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.cell-offset-left--6 {
+  margin-left: calc((100% / 12 * 6) + 8px); }
+
+.cell-offset-right--6 {
+  margin-right: calc((100% / 12 * 6) + 8px); }
+
+.cell--7 {
+  flex-basis: calc(((100% - 11.42857px) / 12 * 7)); }
+  .cell--7:after {
+    content: "cell--7";
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.cell-offset-left--7 {
+  margin-left: calc((100% / 12 * 7) + 8px); }
+
+.cell-offset-right--7 {
+  margin-right: calc((100% / 12 * 7) + 8px); }
+
+.cell--8 {
+  flex-basis: calc(((100% - 8px) / 12 * 8)); }
+  .cell--8:after {
+    content: "cell--8";
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.cell-offset-left--8 {
+  margin-left: calc((100% / 12 * 8) + 8px); }
+
+.cell-offset-right--8 {
+  margin-right: calc((100% / 12 * 8) + 8px); }
+
+.cell--9 {
+  flex-basis: calc(((100% - 5.33333px) / 12 * 9)); }
+  .cell--9:after {
+    content: "cell--9";
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.cell-offset-left--9 {
+  margin-left: calc((100% / 12 * 9) + 8px); }
+
+.cell-offset-right--9 {
+  margin-right: calc((100% / 12 * 9) + 8px); }
+
+.cell--10 {
+  flex-basis: calc(((100% - 3.2px) / 12 * 10)); }
+  .cell--10:after {
+    content: "cell--10";
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.cell-offset-left--10 {
+  margin-left: calc((100% / 12 * 10) + 8px); }
+
+.cell-offset-right--10 {
+  margin-right: calc((100% / 12 * 10) + 8px); }
+
+.cell--11 {
+  flex-basis: calc(((100% - 1.45455px) / 12 * 11)); }
+  .cell--11:after {
+    content: "cell--11";
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.cell-offset-left--11 {
+  margin-left: calc((100% / 12 * 11) + 8px); }
+
+.cell-offset-right--11 {
+  margin-right: calc((100% / 12 * 11) + 8px); }
+
+.cell--12 {
+  flex-basis: calc(((100% - 0px) / 12 * 12)); }
+  .cell--12:after {
+    content: "cell--12";
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.cell-offset-left--12 {
+  margin-left: calc((100% / 12 * 12) + 8px); }
+
+.cell-offset-right--12 {
+  margin-right: calc((100% / 12 * 12) + 8px); }

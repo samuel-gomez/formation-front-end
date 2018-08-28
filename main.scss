@@ -1,0 +1,52 @@
+$pad: 1rem;
+$marg: 1rem;
+$cols: 12;
+$gutter: 16px;
+$boxcolor: #007fff;
+$col: 100% / $cols;
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1;
+  background: #ccc;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.cell {
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.box {
+  height: 50px;
+  background: $boxcolor;
+}
+
+@for $i from 1 through $cols {
+  $totalGutter: (($cols / $i) - 1) * $gutter;
+  .cell--#{$i} {
+    flex-basis: calc(((100% - #{$totalGutter}) / #{$cols} * #{$i}));
+    &:after {
+      content: "cell--#{$i}";
+      position: absolute;
+      font-size: 2rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .cell-offset-left--#{$i} {
+    margin-left: calc((100% / #{$cols} * #{$i}) + #{$gutter/2});
+  }
+  .cell-offset-right--#{$i} {
+    margin-right: calc((100% / #{$cols} * #{$i}) + #{$gutter/2});
+  }
+}
