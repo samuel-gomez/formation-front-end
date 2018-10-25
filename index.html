@@ -1,124 +1,152 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page CV</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <h1>
-        John Doe
-    </h1>
-    <address>
+
+<main>
+
+  <article>
+    <header>
+      <h1> John Doe </h1>
+      <address>
         4 allée du Château blanc
         <br/>59290 Wasquehal
         <br/>France
-    </address>
-    <p>Permis B + Véhicule</p>
-    <p>06 07 08 09 10</p>
-    <p>johndoe@axa.fr</p>
-    <p></p>
-    johndoe@axa.fr</p>
+      </address>
+      <p>Permis B + Véhicule</p>
+      <p>06 07 08 09 10</p>
+      <a href="mailto:johndoe@axa.fr">johndoe@axa.fr</a>
+      <figure>
+        <img alt="John Doe" title="Photo CV de John Doe"
+          src="./640.jpg"
+          srcset="
+          ./640.png 640w,
+          ./768.png 768w,
+          ./1183.png 1540w"
+          sizes="
+          (max-width: 640px) 320px,
+          (max-width: 768px) 500px,
+          (max-width: 1000px) 768px
+          "/>
+      </figure>
+    </header>
 
-    <img alt="John Doe" title="Photo CV de John Doe" src="https://via.placeholder.com/150x150" srcset="https://via.placeholder.com/150x150 320w, https://via.placeholder.com/200x200 640w , https://via.placeholder.com/250x250 1024w, https://via.placeholder.com/300x300 1280w"
-    />
-    <h2>Expérience</h2>
-    <h3>Tech leader</h3>
-    <i>Google en CDI à San Franscisco (depuis 2017)</i>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam iste aperiam, sunt mollitia aut cupiditate fuga nam cumque
+    <section>
+      <h2>Expérience</h2>
+      <h3>Tech leader</h3>
+      <i>Google en CDI à San Franscisco (depuis 2017)</i>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam iste aperiam, sunt mollitia aut cupiditate fuga
+        nam cumque
         vitae vel, adipisci quod? Vero ad obcaecati ab impedit explicabo, tempore id?
-    </p>
-    <h3>Senior Developer</h3>
-    <i>Amazon en CDI à San Franscisco (de 2010 à 2015)</i>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quos optio iusto officia accusamus necessitatibus labore
-        rem veritatis impedit, officiis repellendus inventore rerum praesentium odit numquam exercitationem non aspernatur
+      </p>
+      <h3>Senior Developer</h3>
+      <i>Amazon en CDI à San Franscisco (de 2010 à 2015)</i>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quos optio iusto officia accusamus
+        necessitatibus labore
+        rem veritatis impedit, officiis repellendus inventore rerum praesentium odit numquam exercitationem non
+        aspernatur
         perferendis.
-    </p>
-    <h3>Developer</h3>
-    <i>Facebook en CDI à San Franscisco (de 2013 à 2015)</i>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam obcaecati ipsa repellendus exercitationem corporis
+      </p>
+      <h3>Developer</h3>
+      <i>Facebook en CDI à San Franscisco (de 2013 à 2015)</i>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam obcaecati ipsa repellendus exercitationem
+        corporis
         magnam at, sint illo iure dicta illum repudiandae provident nihil laborum harum? Dolorum corrupti atque amet!
-    </p>
-    <h3>Developer</h3>
-    <i>Twitter en CDI à San Franscisco (de 2010 à 2013)</i>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam obcaecati ipsa repellendus exercitationem corporis
+      </p>
+      <h3>Developer</h3>
+      <i>Twitter en CDI à San Franscisco (de 2010 à 2013)</i>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam obcaecati ipsa repellendus exercitationem
+        corporis
         magnam at, sint illo iure dicta illum repudiandae provident nihil laborum harum? Dolorum corrupti atque amet!
-    </p>
-    <h2>Compétences</h2>
-    <p>
+      </p>
+    </section>
+
+    <section>
+      <h2>Compétences</h2>
+      <p>
         <span>Technos</span>
         <span>Notes (1 à 5)</span>
-    </p>
-    <p>
-        <span>Front-end</span>
-    </p>
-    <p>
-        <span>React</span>:
-        <span>4</span>
-    </p>
-    <p>
-        <span>Angular</span>:
-        <span>4</span>
-    </p>
-    <p>
-        <span>ES6</span>:
-        <span>4</span>
-    </p>
-    <p>
-        <span>VueJS</span>:
-        <span>4</span>
-    </p>
-    <p>
-        <span>Moyenne FE</span>:
-        <span>4</span>
-    </p>
-    <p>
-        <span>Back-end</span>
-    </p>
-    <p>
-        <span>Nodejs</span>:
-        <span>4</span>
-    </p>
-    <p>
-        <span>Symfony</span>:
-        <span>4</span>
-    </p>
-    <p>
-        <span>DotNet</span>:
-        <span>4</span>
-    </p>
-    <p>
-        <span>MongoDb</span>:
-        <span>4</span>
-    </p>
-    <p>
-        <span>MySQL</span>:
-        <span>4</span>
-    </p>
-    <p>
-        <span>Moyenne BE</span>:
-        <span>4</span>
-    </p>
-    <p>
-        <span>Moyenne générale</span>
-        <span>4</span>
-    </p>
+      </p>
 
-    <h2>Loisirs</h2>
-    <figure>
-        <img alt="Basket" title="Loisir : Basket" src="https://via.placeholder.com/150x150" srcset="https://via.placeholder.com/150x150 320w, https://via.placeholder.com/200x200 640w , https://via.placeholder.com/250x250 1024w, https://via.placeholder.com/300x300 1280w"
+      <ul>
+        <li>
+          Front-end
+          <ul>
+            <li>
+              <span>React</span>:
+              <span>4</span>
+            </li>
+
+            <li>
+              <span>Angular</span>:
+              <span>4</span>
+            </li>
+
+            <li>
+              <span>ES6</span>:
+              <span>4</span>
+            </li>
+
+            <li>
+              <span>VueJS</span>:
+              <span>4</span>
+            </li>
+
+          </ul>
+        </li>
+        <li>
+          Back-end
+          <ul>
+            <li>
+              <span>Nodejs</span>:
+              <span>4</span>
+            </li>
+            <li>
+              <span>Symfony</span>:
+              <span>4</span>
+            </li>
+            <li>
+              <span>DotNet</span>:
+              <span>4</span>
+            </li>
+            <li>
+              <span>MongoDb</span>:
+              <span>4</span>
+            </li>
+            <li>
+              <span>MySQL</span>:
+              <span>4</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Loisirs</h2>
+      <figure>
+        <img alt="Basket" title="Loisir : Basket" src="https://via.placeholder.com/150x150"
+             srcset="https://via.placeholder.com/150x150 320w, https://via.placeholder.com/200x200 640w , https://via.placeholder.com/250x250 1024w, https://via.placeholder.com/300x300 1280w"
         />
         <figcaption>Basket</figcaption>
-    </figure>
-    <figure>
-        <img alt="Photo" title="Loisir : Photo" src="https://via.placeholder.com/150x150" srcset="https://via.placeholder.com/150x150 320w, https://via.placeholder.com/200x200 640w , https://via.placeholder.com/250x250 1024w, https://via.placeholder.com/300x300 1280w"
+      </figure>
+      <figure>
+        <img alt="Photo" title="Loisir : Photo" src="https://via.placeholder.com/150x150"
+             srcset="https://via.placeholder.com/150x150 320w, https://via.placeholder.com/200x200 640w , https://via.placeholder.com/250x250 1024w, https://via.placeholder.com/300x300 1280w"
         />
         <figcaption>Photo</figcaption>
-    </figure>
+      </figure>
+    </section>
+
+  </article>
+</main>
 </body>
 
 </html>
