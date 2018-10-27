@@ -1,4 +1,4 @@
-# Enoncé : Page CV : les tableaux
+# Enoncé : Styliser son CV
 
 - Récupérer la maquette pagecv.png
 ![alt text](https://raw.githubusercontent.com/samuel-gomez/formation-front-end/exo-css/srenn.png "maquette CV")
