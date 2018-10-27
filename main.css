@@ -34,14 +34,21 @@ header .title {
 header .title h1 {
   width: 100%;
 }
-header .title img {
+header .title figure {
   position: absolute;
   top: 50%;
   left: 50px;
   width: 150px;
   height: 150px;
   border-radius: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
   border: 4px solid #d83359;
+}
+
+header .title img {
+  border: 0;
 }
 header ul {
   list-style: none;
