@@ -15,9 +15,6 @@
   - border-collapse : fusion des bordures de tableau
   - list-style : style des puces des listes
   - border : définie les bordures
-  - border-radius : arrondis des bordures
-- Travailler avec les positions et les display pour obtenir le résultat de la maquette
-- Utiliser les bonnes unités
 - Valider sa page sur le W3C : [https://validator.w3.org/#validate_by_input](https://validator.w3.org/#validate_by_input)
 
 *Il est conseillé d'adapter la structure HTML pour faciliter le mise en forme*
