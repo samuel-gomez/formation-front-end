@@ -17,9 +17,8 @@ header {
   width: 100%;
 }
 header .info {
-  display: table;
-  width: 100%;
   background: white;
+  padding: 20px;
 }
 header .title {
   position: relative;
@@ -46,8 +45,7 @@ header ul li {
   padding: 0.5rem 0;
 }
 address {
-  display: table-cell;
-  text-align: right;
+  text-align: left;
 }
 
 a {
