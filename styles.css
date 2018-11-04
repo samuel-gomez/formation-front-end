@@ -1,0 +1,18 @@
+ html {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Global CSS that are applied for all screen sizes
+
+	background: rgb(208, 101, 3);
+	background: rgb(233, 147, 26);
+	background: rgb(22, 145, 190);
+	background: rgb(22, 107, 162);
+	background: rgb(27, 54, 71);
+	background: rgb(21, 40, 54);
+*/
+
+/* For screen bigger than 800px */
+@media (min-width: 50em) {
+
+}
