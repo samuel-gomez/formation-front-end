@@ -1,0 +1,198 @@
+ html {
+  font-family: 'Roboto', sans-serif;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon-users {
+  width: 1.125em;
+}
+
+a, li {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Global CSS that are applied for all screen sizes */
+
+.nav {
+  position: relative;
+}
+
+.nav ul {
+	max-width: 1240px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.nav li span {
+	display: block;
+}
+
+.nav a {
+  padding: 1em;
+	display: block;
+	color: rgba(249, 249, 249, .9);
+	text-decoration: none;
+	-webkit-transition: color .5s, background .5s, height .5s;
+	-moz-transition: color .5s, background .5s, height .5s;
+	-o-transition: color .5s, background .5s, height .5s;
+	-ms-transition: color .5s, background .5s, height .5s;
+	transition: color .5s, background .5s, height .5s;
+}
+
+.nav .icon{
+	/* Make the font smoother for Chrome */
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+  vertical-align: middle;
+}
+
+/* Remove the blue Webkit background when element is tapped */
+
+a, button {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* Hover effect for the whole navigation to make the hovered item stand out */
+
+.nav ul:hover a {
+	color: rgba(249, 249, 249, .5);
+}
+
+.nav ul:hover a:hover {
+	color: rgba(249, 249, 249, 0.99);
+}
+
+/* Adding some background color to the different menu items */
+
+.nav li:nth-child(6n+1) {
+	background: rgb(208, 101, 3);
+}
+
+.nav li:nth-child(6n+2) {
+	background: rgb(233, 147, 26);
+}
+
+.nav li:nth-child(6n+3) {
+	background: rgb(22, 145, 190);
+}
+
+.nav li:nth-child(6n+4) {
+	background: rgb(22, 107, 162);
+}
+
+.nav li:nth-child(6n+5) {
+	background: rgb(27, 54, 71);
+}
+
+.nav li:nth-child(6n+6) {
+	background: rgb(21, 40, 54);
+}
+
+
+/* Styling the toggle menu link and hiding it */
+.nav .navtoogle{
+	display: none;	
+	width: 100%;
+	padding: 0.5em 0.5em 0.8em;
+	font-family: 'Lato',Calibri,Arial,sans-serif;
+	font-weight: normal;
+	text-align: left;
+	color: rgb(7, 16, 15);
+	font-size: 1.2em;
+	background: none;	
+	border: none;
+	border-bottom: 4px solid rgb(221, 221, 221);
+	cursor: pointer;
+}
+
+.navtoogle i{
+	z-index:-1;
+}
+
+.icon-menu {
+	position: relative;
+	top: 3px;
+	line-height: 0;
+	font-size: 1.6em;
+}
+
+
+li:hover .sub{
+  display: block;
+  max-height: 1000px;
+}
+
+.sub {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #eee;
+  max-height: 0;
+  transition: all ease .5s;
+  overflow: hidden;
+}
+
+.sub-content {
+  padding: 1em;
+}
+
+
+/* For screen bigger than 800px */
+@media (min-width: 50em) {
+
+	/* Transforms the list into a horizontal navigation */
+  .nav ul {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+	.nav li {
+    display: inline-block;
+		flex: 1 1 auto;
+		text-align: center;
+	}
+
+	.nav a {
+		display: block;
+		width: auto;
+	}
+
+	/* Placing the icon */
+	
+	.icon {
+		padding-top: 1.4em;
+	}
+
+	.icon + span {
+		margin-top: 1em;
+		-webkit-transition: margin .5s;
+		-moz-transition: margin .5s;
+		-o-transition: margin .5s;
+		-ms-transition: margin .5s;
+		transition: margin .5s;
+	}
+
+}
+
+@media (min-width: 50em) and (max-width: 61.250em) {
+
+	/* Size and font adjustments to make it fit into the screen*/
+	.nav ul {
+		font-size: 1.2em;
+	}
+
+}
