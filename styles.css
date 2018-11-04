@@ -1,18 +1,52 @@
- html {
+html {
   font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
 }
 
-/* Global CSS that are applied for all screen sizes
+body {
+  font-size: 10px;
+}
+.Form {
+  width: 25%;
+  margin: 0 auto;
+}
+.Form-field {
+  position: relative;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
 
-	background: rgb(208, 101, 3);
-	background: rgb(233, 147, 26);
-	background: rgb(22, 145, 190);
-	background: rgb(22, 107, 162);
-	background: rgb(27, 54, 71);
-	background: rgb(21, 40, 54);
-*/
+.Form-input {
+  width: 100%;
+  padding: 1em;
+  border: 0;
+  border-bottom: 1px solid #eee;
+  outline: none;
+}
 
-/* For screen bigger than 800px */
-@media (min-width: 50em) {
+.Form-input:focus,
+.Form-input:valid {
+  border-color: #333;
+}
 
+.Form-label {
+  position: absolute;
+  top: 50%;
+  left: 1em;
+  transform: translateY(-50%);
+  transition: all ease .5s;
+  color: #bdbdbd;
+  pointer-events:none;
+}
+
+.Form-input:focus {
+  outline: hidden;
+  border-color: #333;
+}
+
+.Form-input:valid ~ .Form-label,
+.Form-input:focus ~ .Form-label {
+  font-size: 1rem;
+  transform: translateY(0);
+  top: 0;
 }
