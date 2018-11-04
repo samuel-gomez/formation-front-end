@@ -1,7 +1,5 @@
-# Enoncé : Page CV : contenu texte
+# Enoncé : Créer une navigation
 
-- Récupérer le document Word
-- Créer la structure et le contenu HTML de la page CV (pas de CSS pour le moment)
-- Utiliser les balises appropriées
-- Créer une navigation permettant d'accéder aux différentes sections (expérience, compétences, autres)
-- Valider sa page sur le W3C : [https://validator.w3.org/#validate_by_input](https://validator.w3.org/#validate_by_input)
+- Créer la navigation avec les balises appropriées
+- Créer un sous menu - 100% de la taille de l'écran pour les items services et portfolio
+- Ajouter une animation sur le sous menu au hover des items de premier niveau
