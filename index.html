@@ -7,130 +7,551 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page CV</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <style>
+      html {
+        font-family: 'Roboto', sans-serif;
+      }
+      .icon {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+      }
+
+      .icon-users {
+        width: 1.125em;
+      }
+
+      a, li {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+
+
+/* Global CSS that are applied for all screen sizes */
+
+.nav ul {
+	max-width: 1240px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.nav li span {
+	display: block;
+}
+
+.nav a {
+	display: block;
+	color: rgba(249, 249, 249, .9);
+	text-decoration: none;
+	-webkit-transition: color .5s, background .5s, height .5s;
+	-moz-transition: color .5s, background .5s, height .5s;
+	-o-transition: color .5s, background .5s, height .5s;
+	-ms-transition: color .5s, background .5s, height .5s;
+	transition: color .5s, background .5s, height .5s;
+}
+
+.nav .icon{
+	/* Make the font smoother for Chrome */
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+  vertical-align: middle;
+}
+
+/* Remove the blue Webkit background when element is tapped */
+
+a, button {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* Hover effect for the whole navigation to make the hovered item stand out */
+
+.nav ul:hover a {
+	color: rgba(249, 249, 249, .5);
+}
+
+.nav ul:hover a:hover {
+	color: rgba(249, 249, 249, 0.99);
+}
+
+/* Adding some background color to the different menu items */
+
+.nav li:nth-child(6n+1) {
+	background: rgb(208, 101, 3);
+}
+
+.nav li:nth-child(6n+2) {
+	background: rgb(233, 147, 26);
+}
+
+.nav li:nth-child(6n+3) {
+	background: rgb(22, 145, 190);
+}
+
+.nav li:nth-child(6n+4) {
+	background: rgb(22, 107, 162);
+}
+
+.nav li:nth-child(6n+5) {
+	background: rgb(27, 54, 71);
+}
+
+.nav li:nth-child(6n+6) {
+	background: rgb(21, 40, 54);
+}
+
+/* For screen bigger than 800px */
+@media (min-width: 50em) {
+
+	/* Transforms the list into a horizontal navigation */
+  .nav ul {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+	.nav li {
+    display: inline-block;
+		flex: 1 1 auto;
+		text-align: center;
+		-webkit-transition: border .5s;
+		-moz-transition: border .5s;
+		-o-transition: border .5s;
+		-ms-transition: border .5s;
+		transition: border .5s;
+	}
+
+	.nav a {
+		display: block;
+		width: auto;
+    padding-top: 2em;
+	}
+
+	/* hover, focused and active effects that add a little colored border to the different items */
+	.nav li:nth-child(6n+1) a:hover,
+	.nav li:nth-child(6n+1) a:active,
+	.nav li:nth-child(6n+1) a:focus {
+		border-bottom: 4px solid rgb(174, 78, 1);
+	}
+
+	.nav li:nth-child(6n+2) a:hover,
+	.nav li:nth-child(6n+2) a:active,
+	.nav li:nth-child(6n+2) a:focus {
+		border-bottom: 4px solid rgb(191, 117, 20);
+	}
+
+	.nav li:nth-child(6n+3) a:hover,
+	.nav li:nth-child(6n+3) a:active,
+	.nav li:nth-child(6n+3) a:focus {
+		border-bottom: 4px solid rgb(12, 110, 149);
+	}
+
+	.nav li:nth-child(6n+4) a:hover,
+	.nav li:nth-child(6n+4) a:active,
+	.nav li:nth-child(6n+4) a:focus {
+		border-bottom: 4px solid rgb(10, 75, 117);
+	}
+
+	.nav li:nth-child(6n+5) a:hover,
+	.nav li:nth-child(6n+5) a:active,
+	.nav li:nth-child(6n+5) a:focus {
+		border-bottom: 4px solid rgb(16, 34, 44);
+	}
+
+	.nav li:nth-child(6n+6) a:hover,
+	.nav li:nth-child(6n+6) a:active,
+	.nav li:nth-child(6n+6) a:focus {
+		border-bottom: 4px solid rgb(9, 18, 25);
+	}
+
+	/* Placing the icon */
+	
+	.icon {
+		padding-top: 1.4em;
+	}
+
+	.icon + span {
+		margin-top: 1em;
+		-webkit-transition: margin .5s;
+		-moz-transition: margin .5s;
+		-o-transition: margin .5s;
+		-ms-transition: margin .5s;
+		transition: margin .5s;
+	}
+
+	/* Animating the height of the element*/
+	.nav a {
+		height: 9em;
+	}
+
+	.nav a:hover ,
+	.nav a:active ,
+	.nav a:focus {
+		height: 10em;
+	}	
+
+	/* Making the text follow the height animation */
+	.nav a:hover .icon + span {
+		margin-top: 2em;
+		-webkit-transition: margin .5s;
+		-moz-transition: margin .5s;
+		-o-transition: margin .5s;
+		-ms-transition: margin .5s;
+		transition: margin .5s;
+	}
+
+	/* Positioning the icons and preparing for the animation*/
+	.nav svg {
+		position: relative;
+		display: inline-block;
+		margin: 0 auto;
+		padding: 0.4em;
+		border-radius: 50%;
+		font-size: 1.8em;
+		box-shadow: 0 0 0 30px transparent;
+		background: rgba(255,255,255,0.1);
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+		-o-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		-webkit-transition: box-shadow .6s ease-in-out;
+		-moz-transition: box-shadow .6s ease-in-out;
+		-o-transition: box-shadow .6s ease-in-out;
+		-ms-transition: box-shadow .6s ease-in-out;
+		transition: box-shadow .6s ease-in-out;
+	}	
+	
+	/* Animate the box-shadow to create the effect */
+	.nav a:hover i,
+	.nav a:active i,
+	.nav a:focus i {		
+		box-shadow: 0 0 0 0 rgba(255,255,255,0.2);
+		-webkit-transition: box-shadow .4s ease-in-out;
+		-moz-transition: box-shadow .4s ease-in-out;
+		-o-transition: box-shadow .4s ease-in-out;
+		-ms-transition: box-shadow .4s ease-in-out;
+		transition: box-shadow .4s ease-in-out;
+	}
+		
+}
+
+@media (min-width: 50em) and (max-width: 61.250em) {
+
+	/* Size and font adjustments to make it fit into the screen*/
+	.nav ul {
+		font-size: 1.2em;
+	}
+
+}
+
+/* The "tablet" and "mobile" version */
+
+@media (max-width: 49.938em) {		
+	
+	/* Instead of adding a border, we transition the background color */
+	.nav ul li:nth-child(6n+1) a:hover,
+	.nav ul li:nth-child(6n+1) a:active,
+	.nav ul li:nth-child(6n+1) a:focus {
+		background: rgb(227, 119, 20);
+	}
+
+	.nav li:nth-child(6n+2) a:hover,
+	.nav li:nth-child(6n+2) a:active,
+	.nav li:nth-child(6n+2) a:focus {
+		background: rgb(245, 160, 41);
+	}
+
+	.nav li:nth-child(6n+3) a:hover,
+	.nav li:nth-child(6n+3) a:active,
+	.nav li:nth-child(6n+3) a:focus {
+		background: rgb(44, 168, 219);
+	}
+
+	.nav li:nth-child(6n+4) a:hover,
+	.nav li:nth-child(6n+4) a:active,
+	.nav li:nth-child(6n+4) a:focus {
+		background: rgb(31, 120, 176);
+	}
+
+	.nav li:nth-child(6n+5) a:hover,
+	.nav li:nth-child(6n+5) a:active,
+	.nav li:nth-child(6n+5) a:focus {
+		background: rgb(39, 70, 90);
+	}
+
+	.nav li:nth-child(6n+6) a:hover,
+	.nav li:nth-child(6n+6) a:active,
+	.nav li:nth-child(6n+6) a:focus {
+		background: rgb(32, 54, 68);
+	}
+
+	.nav ul li {
+		-webkit-transition: background 0.5s;
+		-moz-transition: background 0.5s;
+		-o-transition: background 0.5s;
+		-ms-transition: background 0.5s;
+		transition: background 0.5s;
+	}	
+
+}
+
+/* CSS specific to the 2x3 columns version */
+@media (min-width:32.5em) and (max-width: 49.938em) {
+	
+	/* Creating the 2 column layout using floating elements once again */
+	.nav li {
+		display: block;
+		float: left;
+		width: 50%;
+	}
+	
+	/* Adding some padding to make the elements look nicer*/
+	.nav a {
+		padding: 0.8em;		
+	}
+
+	/* Displaying the icons on the left, and the text on the right side using inlin-block*/
+	.nav li span, 
+	.nav li span.icon {
+		display: inline-block;
+	}
+
+	.nav li span.icon {
+		width: 50%;
+	}
+
+	.nav li .icon + span {
+		font-size: 1em;
+	}
+
+	.icon + span {
+		position: relative;
+		top: -0.2em;
+	}
+
+	/* Adaptating to the icons to animate the size and border of the rounded background in a more discreet way */
+	.nav li .icon {
+		display: inline-block;
+		padding: 8% 9%;
+		border: 4px solid transparent;
+		border-radius: 50%;
+		font-size: 1.5em;
+		background: rgba(255,255,255,0.1);
+		-webkit-transition: border .5s;
+		-moz-transition: border .5s;
+		-o-transition: border .5s;
+		-ms-transition: border .5s;
+		transition: border .5s;
+	}
+
+	/* Transition effect on the border color */
+	.nav li:hover i,
+	.nav li:active i,
+	.nav li:focus i {
+		border: 4px solid rgba(255,255,255,0.1);
+	}
+	
+}
+
+/* Adapting the font size and width for smaller screns*/
+@media (min-width: 32.5em) and (max-width: 38.688em) {
+	
+	.nav li span.icon {
+		width: 50%;
+	}
+
+	.nav li .icon + span {
+		font-size: 0.9em;
+	}
+}
+
+/* Styling the toggle menu link and hiding it */
+.nav .navtoogle{
+	display: none;	
+	width: 100%;
+	padding: 0.5em 0.5em 0.8em;
+	font-family: 'Lato',Calibri,Arial,sans-serif;
+	font-weight: normal;
+	text-align: left;
+	color: rgb(7, 16, 15);
+	font-size: 1.2em;
+	background: none;	
+	border: none;
+	border-bottom: 4px solid rgb(221, 221, 221);
+	cursor: pointer;
+}
+
+.navtoogle i{
+	z-index:-1;
+}
+
+.icon-menu {
+	position: relative;
+	top: 3px;
+	line-height: 0;
+	font-size: 1.6em;
+}
+
+@media (max-width: 32.438em) {
+
+	/* Unhiding the styled menu link */
+	.nav .navtoogle{
+		margin: 0;
+		display: block;
+	}
+	
+	/* Animating the height of the navigation when the button is clicked */
+	
+	/* When JavaScript is disabled, we hide the menu */
+	.nav ul {
+		max-height: 30em;
+		overflow: hidden;
+	}
+	
+	/* Adapting the layout of the menu for smaller screens : icon on the left and text on the right*/
+	
+	.nav li span {
+		display: inline-block;
+		height: 100%;
+	}
+
+	.nav a {
+		padding: 0.5em;		
+	}
+	
+	.icon + span {
+		margin-left: 1em;
+		font-size: 0.8em;
+	}
+	
+	/* Adding a left border of 8 px with a different color for each menu item*/
+	.nav li:nth-child(6n+1) {
+		border-left: 8px solid rgb(174, 78, 1);
+	}
+
+	.nav li:nth-child(6n+2) {
+		border-left: 8px solid rgb(191, 117, 20);
+	}
+
+	.nav li:nth-child(6n+3) {
+		border-left: 8px solid rgb(13, 111, 150);
+	}
+
+	.nav li:nth-child(6n+4) {
+		border-left: 8px solid rgb(10, 75, 117);
+	}
+
+	.nav li:nth-child(6n+5) {
+		border-left: 8px solid rgb(16, 34, 44);
+	}
+
+	.nav li:nth-child(6n+6) {
+		border-left: 8px solid rgb(9, 18, 25);
+	}
+
+	/* make the nav bigger on touch screens */
+	.touch .nav a {
+		padding: 0.8em;
+	}
+}
+
+
+    </style>
   </head>
 
   <body>
 
-    <main>
+    <header>    
+      <nav id="menu" class="nav"><button type="button" id="menutoggle" class=" navtoogle active " aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i> Menu</button>					
+					<ul>
+						<li>
+							<a href="#">
+                <svg class="icon icon-home">
+                  <use xlink:href="#icon-home"></use>
+                </svg>
+								<span>Home</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+                <svg class="icon icon-lab">
+                  <use xlink:href="#icon-lab"></use>
+                </svg>
+								<span>Services</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+                <svg class="icon icon-home">
+                  <use xlink:href="#icon-folder-open"></use>
+                </svg>
+								<span>Portfolio</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+                <svg class="icon icon-home">
+                  <use xlink:href="#icon-home"></use>
+                </svg>
+								<span>Blog</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+                <svg class="icon icon-home">
+                  <use xlink:href="#icon-users"></use>
+                </svg>
+								<span>The team</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg class="icon icon-home">
+                    <use xlink:href="#icon-envelop"></use>
+                  </svg>
+								<span>Contact</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+    </header>
 
-      <article>
-        <header>
-          <h1> John Doe </h1>
-          <address>
-            4 allée du Château blanc
-            <br/>59290 Wasquehal
-            <br/>France
-          </address>
-          <p>Permis B + Véhicule</p>
-          <p>06 07 08 09 10</p>
-          <a href="mailto:johndoe@axa.fr?subject=Formation%20HTML%2FCSS&body=Bonne%20Formation%20%3A)">johndoe@axa.fr</a>
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+      <symbol id="icon-home" viewBox="0 0 32 32">
+      <title>home</title>
+      <path d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z"></path>
+      </symbol>
+      <symbol id="icon-folder-open" viewBox="0 0 32 32">
+      <title>folder-open</title>
+      <path d="M26 30l6-16h-26l-6 16zM4 12l-4 18v-26h9l4 4h13v4z"></path>
+      </symbol>
+      <symbol id="icon-envelop" viewBox="0 0 32 32">
+      <title>envelop</title>
+      <path d="M29 4h-26c-1.65 0-3 1.35-3 3v20c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-20c0-1.65-1.35-3-3-3zM12.461 17.199l-8.461 6.59v-15.676l8.461 9.086zM5.512 8h20.976l-10.488 7.875-10.488-7.875zM12.79 17.553l3.21 3.447 3.21-3.447 6.58 8.447h-19.579l6.58-8.447zM19.539 17.199l8.461-9.086v15.676l-8.461-6.59z"></path>
+      </symbol>
+      <symbol id="icon-users" viewBox="0 0 36 32">
+      <title>users</title>
+      <path d="M24 24.082v-1.649c2.203-1.241 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h28c0-4.030-5.216-7.364-12-7.918z"></path>
+      <path d="M10.225 24.854c1.728-1.13 3.877-1.989 6.243-2.513-0.47-0.556-0.897-1.176-1.265-1.844-0.95-1.726-1.453-3.627-1.453-5.497 0-2.689 0-5.228 0.956-7.305 0.928-2.016 2.598-3.265 4.976-3.734-0.529-2.39-1.936-3.961-5.682-3.961-6 0-6 4.029-6 9 0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h8.719c0.454-0.403 0.956-0.787 1.506-1.146z"></path>
+      </symbol>
+      <symbol id="icon-lab" viewBox="0 0 32 32">
+      <title>lab</title>
+      <path d="M29.884 25.14l-9.884-16.47v-6.671h1c0.55 0 1-0.45 1-1s-0.45-1-1-1h-10c-0.55 0-1 0.45-1 1s0.45 1 1 1h1v6.671l-9.884 16.47c-2.264 3.773-0.516 6.86 3.884 6.86h20c4.4 0 6.148-3.087 3.884-6.86zM7.532 20l6.468-10.779v-7.221h4v7.221l6.468 10.779h-16.935z"></path>
+      </symbol>
+      </defs>
+    </svg>
 
-          <nav>
-            <a href="#exp">Expérience</a>
-            <a href="#comp">Compétences</a>
-            <a href="#oth">Others</a>
-          </nav>
-        </header>
-
-        <section id="exp">
-          <h2>Expérience</h2>
-          <h3>Tech leader</h3>
-          <i>Google en CDI à San Franscisco (depuis 2017)</i>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam iste aperiam, sunt mollitia aut cupiditate fuga nam
-            cumque
-            vitae vel, adipisci quod? Vero ad obcaecati ab impedit explicabo, tempore id?
-          </p>
-          <h3>Senior Developer</h3>
-          <i>Amazon en CDI à San Franscisco (de 2010 à 2015)</i>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quos optio iusto officia accusamus necessitatibus
-            labore
-            rem veritatis impedit, officiis repellendus inventore rerum praesentium odit numquam exercitationem non aspernatur
-            perferendis.
-          </p>
-          <h3>Developer</h3>
-          <i>Facebook en CDI à San Franscisco (de 2013 à 2015)</i>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam obcaecati ipsa repellendus exercitationem
-            corporis
-            magnam at, sint illo iure dicta illum repudiandae provident nihil laborum harum? Dolorum corrupti atque amet!
-          </p>
-          <h3>Developer</h3>
-          <i>Twitter en CDI à San Franscisco (de 2010 à 2013)</i>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam obcaecati ipsa repellendus exercitationem
-            corporis
-            magnam at, sint illo iure dicta illum repudiandae provident nihil laborum harum? Dolorum corrupti atque amet!
-          </p>
-        </section>
-
-        <section id="comp">
-          <h2>Compétences</h2>
-          <p>
-            <span>Technos</span><br>
-            <small>Notes (1 à 5)</small>
-          </p>
-
-          <ul>
-            <li>
-              Front-end
-              <ul>
-                <li>
-                  <span>React</span>:
-                  <span>4</span>
-                </li>
-
-                <li>
-                  <span>Angular</span>:
-                  <span>4</span>
-                </li>
-
-                <li>
-                  <span>ES6</span>:
-                  <span>4</span>
-                </li>
-
-                <li>
-                  <span>VueJS</span>:
-                  <span>4</span>
-                </li>
-
-              </ul>
-            </li>
-            <li>
-              Back-end
-              <ul>
-                <li>
-                  <span>Nodejs</span>:
-                  <span>4</span>
-                </li>
-                <li>
-                  <span>Symfony</span>:
-                  <span>4</span>
-                </li>
-                <li>
-                  <span>DotNet</span>:
-                  <span>4</span>
-                </li>
-                <li>
-                  <span>MongoDb</span>:
-                  <span>4</span>
-                </li>
-                <li>
-                  <span>MySQL</span>:
-                  <span>4</span>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-        <section id="oth">
-          <h2>Loisirs</h2>
-          <ul>
-            <li>Basket</li>
-            <li>Moto</li>
-          </ul>
-        </section>
-
-      </article>
-    </main>
   </body>
 
 </html>
