@@ -11,10 +11,42 @@ body {
   margin: 0 auto;
 }
 .Form-field {
+  position: relative;
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
 }
 
 .Form-input {
   width: 100%;
+  padding: 1em;
+  border: 0;
+  border-bottom: 1px solid #eee;
+  outline: none;
+}
+
+.Form-input:focus,
+.Form-input:valid {
+  border-color: #333;
+}
+
+.Form-label {
+  position: absolute;
+  top: 50%;
+  left: 1em;
+  transform: translateY(-50%);
+  transition: all ease .5s;
+  color: #bdbdbd;
+  pointer-events:none;
+}
+
+.Form-input:focus {
+  outline: hidden;
+  border-color: #333;
+}
+
+.Form-input:valid ~ .Form-label,
+.Form-input:focus ~ .Form-label {
+  font-size: 1rem;
+  transform: translateY(0);
+  top: 0;
 }
