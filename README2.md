@@ -1,3 +1,8 @@
+Julien Dossena, directeur artistique de Paco Rabanne, a remis la célèbre 
+maison française en orbite. On adore son approche radicale et novatrice, 
+pleine d’énergie et de détermination, une vision very Printemps ! 
+(Re)découverte d’une griffe mythique.
+
 printemps aime...
 sa liberté de mouvement 
 et d’attitude
