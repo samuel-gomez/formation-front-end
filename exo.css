@@ -1,3 +1,63 @@
 /** 
-** Commencer l'exercice ici 
+** Color: #00964c;
 **/
+
+.Nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.Nav-list {
+    padding: 0 20px;
+}
+.Nav-item:last-child .Nav-link {
+    border: 0;
+}
+.Nav-link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid currentColor;
+}
+
+.Nav-label {
+    margin-right: auto;
+    font-size: 1em;
+}
+
+.Nav-desc {
+    font-size: .75em;
+}
+
+.Nav-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 1em;
+}
+.Nav-chevron {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+
+.Nav-content--secondary {
+    background: #00964c;
+    color: #fff;
+}
+
+.Nav-category {
+    display: block;
+}
+
+.Nav-label--shop {
+    font-style: italic;
+    text-transform: none;
+    font-size: 1.2em;
+}
