@@ -1,18 +1,12 @@
-/** 
-** Color: #00964c;
-**/
-
 .Nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
 }
-
 .Nav-logo {
     display: none;
 }
-
 .Nav-list {
     padding: 0 20px;
 }
@@ -66,7 +60,7 @@
     font-size: 1.2em;
 }
 
-@media (min-width: 34em) {
+@include respond-to('m') {
     body {
         height: 130vh;
     }
@@ -116,9 +110,7 @@
 
     .Nav-logo {
         display: block;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        @include absoluteCenter(true, false);
         top: 30px;
         width: 150px;
         z-index: 1;
