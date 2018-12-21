@@ -5,8 +5,8 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss ./main.scss  dist/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "build-css": "node ./node_modules/node-sass/bin/node-sass --include-path scss ./main.scss  dist/main.css",
+    "watch-css": "node ./node_modules/nodemon/bin/nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",

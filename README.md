@@ -7,7 +7,6 @@ Réaliser la page
 https://www.bonduelle.com/fr/le-groupe/bonduelle-en-bref.html
 
 * Créer un tableaux comprenant les variables de couleurs
-* Imbriquer le code pour une implémentation Sass
 * Utiliser la mixin du mediaqueries
 * Intégrer les composants
 
